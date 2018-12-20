@@ -12,8 +12,6 @@ begin
 end;
 $$ language plpgsql;
 
-DROP TRIGGER addmessage ON message;
-
 CREATE TRIGGER messagenotification
   BEFORE INSERT ON message
   FOR EACH ROW

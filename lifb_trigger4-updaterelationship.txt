@@ -9,7 +9,6 @@ begin
 end;
 $$ language plpgsql;
 
-DROP TRIGGER addrlsh on fuser;
 
 CREATE TRIGGER addrlsh
   AFTER UPDATE ON fuser
