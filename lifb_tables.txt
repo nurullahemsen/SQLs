@@ -10,6 +10,7 @@ pass varchar(255) not null,
 bdate date not null,
 gender char not null,
 relationship_id integer,
+CHECK(user_id != relationship_id),
 creator_id integer not null,
 foreign key(creator_id) references creator(creator_id)
 	ON DELETE CASCADE ON UPDATE CASCADE,
@@ -91,15 +92,6 @@ foreign key(user_id) references fuser(user_id)
 foreign key(page_id) references page(page_id)
 	ON DELETE CASCADE ON UPDATE CASCADE);
 
-create table applies(
-user_id integer,
-job_id integer,
-primary key(user_id,job_id),
-foreign key(user_id) references fuser(user_id)
-	ON DELETE CASCADE ON UPDATE CASCADE,
-foreign key(job_id) references job_ad(job_id)
-	ON DELETE CASCADE ON UPDATE CASCADE);
-
 create table post(
 post_id serial primary key,
 creator_id integer not null,
@@ -140,7 +132,7 @@ create table f_event(
 event_id serial,
 creator_id integer,
 event_name varchar(255) not null,
-event_date date not null,
+event_date date not null CHECK (event_date < current_date),
 address varchar(255) not null,
 description varchar(255),
 primary key(event_id),
@@ -210,6 +202,7 @@ gpa numeric(10,2),
 department varchar(255),
 start_date date,
 end_date date,
+CHECK (start_date < end_date),
 primary key(user_id,start_date),
 foreign key(user_id) references fuser(user_id)
 	ON DELETE CASCADE ON UPDATE CASCADE);
@@ -241,7 +234,16 @@ user_id integer,
 talent_name varchar(255) not null,
 primary key(user_id,talent_name),
 foreign key(user_id) references fuser(user_id)
-	ON DELETE CASCADE ON UPDATE CASCADE);			 
+	ON DELETE CASCADE ON UPDATE CASCADE);		
+					
+create table applies(
+user_id integer,
+job_id integer,
+primary key(user_id,job_id),
+foreign key(user_id) references fuser(user_id)
+	ON DELETE CASCADE ON UPDATE CASCADE,
+foreign key(job_id) references job_ad(job_id)
+	ON DELETE CASCADE ON UPDATE CASCADE);
 
 create table feed(
 creator_id integer,
