@@ -28,7 +28,11 @@ INSERT INTO public.post(
 	(12,'2010-05-07'),
 	(10,'2009-07-03'),
 	(6,'2015-06-03'),
-	(10,'2013-09-03');
+	(10,'2013-09-03'),
+	(4,'2009-07-03'),
+	(7,'2015-06-03'),
+	(4,'2013-09-03'),
+	(7,'2013-09-03');
 
 INSERT INTO public.job_ad(
 	description, company_name, job_title, job_type, user_id)

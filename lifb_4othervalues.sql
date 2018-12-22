@@ -103,7 +103,11 @@ INSERT INTO public.post_likes(
 	(5,5,1),
 	(10,13,2),
 	(7,12,3),
-	(8,6,4);
+	(8,6,4),
+	(11,6,1),
+	(12,5,1),
+	(13,4,1),
+	(14,2,2);
 
 INSERT INTO public.fcomment(
 	post_id,cdate, comment_content, creator_id)
