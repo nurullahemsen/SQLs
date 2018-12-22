@@ -1,12 +1,12 @@
 INSERT INTO public.f_event(
 	creator_id, event_name, event_date, address, description)
-	VALUES (1,'ename1','2017-08-09','address1','descp1'),
-	(3,'ename2','2015-08-09','address2','descp2'),
-	(4,'ename3','2018-08-09','address3','descp3'),
-	(8,'ename4','2012-08-09','address4','descp4'),
-	(9,'ename5','2017-05-09','address5','descp5'),
-	(2,'ename6','2017-08-07','address6','descp6'),
-	(5,'ename7','2017-08-03','address7','descp7');
+	VALUES (1,'ename1','2019-08-09','address1','descp1'),
+	(3,'ename2','2019-08-09','address2','descp2'),
+	(4,'ename3','2020-08-09','address3','descp3'),
+	(8,'ename4','2020-08-09','address4','descp4'),
+	(9,'ename5','2019-05-09','address5','descp5'),
+	(2,'ename6','2019-08-07','address6','descp6'),
+	(5,'ename7','2018-12-30','address7','descp7');
 
 INSERT INTO public.fgroup(
 	description)
