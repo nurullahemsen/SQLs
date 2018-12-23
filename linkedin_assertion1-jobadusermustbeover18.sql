@@ -2,7 +2,7 @@ create or replace function over18() returns trigger as $$
 begin
 	IF (SELECT date_part('year',age(bdate)) FROM luser WHERE luser.user_id= new.user_id)<18
 	THEN
-		RAISE EXCEPTION 'hata yaptın';
+		RAISE EXCEPTION 'iş ilanı vermek için 18den büyük olmalısın';
 	END IF;
 		RETURN NEW;
 end;
