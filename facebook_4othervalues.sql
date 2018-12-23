@@ -136,6 +136,7 @@ INSERT INTO public.join_event(
 	(1, 5),
 	(6, 4),
 	(7, 7),
+	(7, 8),
 	(3, 2);
 
 INSERT INTO public.group_manage(
