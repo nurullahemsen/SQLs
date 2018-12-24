@@ -40,7 +40,8 @@ INSERT INTO public.education(
 	VALUES (2,'ege','lisans','3.56','ceng','2016-09-09','2020-05-06'),
 	(2,'ege','ylisans','3.20','ceng','2020-09-09','2022-05-06'),
 	(1,'yıldız','lisans','3.87','ceng','2017-09-09','2021-05-06'),
-	(3,'odtü','lisans','2.48','ee','203-09-09','2028-05-06'),
+	(3,'odtü','lisans','2.48','ee','2018-09-09','2028-05-06'),
+	(6,'odtü','lisans','2.50','ee','2017-09-09','2028-05-06'),
 	(4,'ege','lisans','3.02','medicine','2013-09-09','2019-05-06');
 
 INSERT INTO public.experience(
@@ -48,6 +49,7 @@ INSERT INTO public.experience(
 	VALUES (2,'intern','izmir','company1','2015-07-11','2015-08-22','IT','blahblah'),
 	(1,'developer','izmir','company1','2012-07-11',NULL,'IT','blahblah'),
 	(3,'director','istanbul','company2','2013-07-11',NULL,'FOOD','blahblah'),
+	(6,'assistant','istanbul','company2','2017-07-11',NULL,'MARKETING','blahblah'),
 	(4,'manager','ankara','company3','2015-07-11','2015-08-22','ENTERTAINMENT','blahblah'),
 	(7,'intern','izmir','company1','2006-07-11','2007-08-22','ELECTRONIC','blahblah'),
 	(7,'advisor','istanbul','company2','2015-07-11',NULL,'IT','blahblah');
@@ -84,6 +86,7 @@ INSERT INTO public.lconnect(
 			(2,4,'2016-10-22'),
 			(1,3,'2015-10-31'),
 			(3,7,'2015-08-31'),
+			(3,6,'2015-08-31'),
 			(4,5,'2002-10-31'),
 			(5,7,'2002-10-31'),
 			(6,7,'2003-10-07'),
