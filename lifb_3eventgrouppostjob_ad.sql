@@ -6,7 +6,7 @@ INSERT INTO public.f_event(
 	(8,'ename4','2020-08-09','address4','descp4'),
 	(9,'ename5','2019-05-09','address5','descp5'),
 	(2,'ename6','2019-08-07','address6','descp6'),
-	(5,'ename7','2018-12-30','address7','descp7');
+	(5,'ename7','2019-12-30','address7','descp7');
 
 INSERT INTO public.fgroup(
 	description)

@@ -132,7 +132,7 @@ create table f_event(
 event_id serial,
 creator_id integer,
 event_name varchar(255) not null,
-event_date date not null CHECK (event_date < current_date),
+event_date date not null CHECK (event_date > current_date),
 address varchar(255) not null,
 description varchar(255),
 primary key(event_id),
