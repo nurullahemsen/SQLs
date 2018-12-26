@@ -9,7 +9,7 @@ end;
 $$ language plpgsql;
 
 CREATE TRIGGER dontjoinpastevents
-  BEFORE INSERT OR UPDATE ON join_event
+  BEFORE INSERT ON join_event
   FOR EACH ROW 
   EXECUTE PROCEDURE dontjoinpasteventsfunc();
   
