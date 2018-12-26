@@ -3,8 +3,8 @@ UPDATE public.creator
 	WHERE creator_id=3;
 
 UPDATE public.fuser
-	SET relationship_id=7
-	WHERE user_id=4;
+	SET relationship_id=1
+	WHERE user_id=2;
 
 UPDATE public.fgroup
     SET group_id=20
